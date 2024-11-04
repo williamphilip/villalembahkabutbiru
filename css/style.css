@@ -1,0 +1,260 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f8fc;
+  height: 2000px;
+}
+
+/* navbar */
+.navbar {
+  border-bottom: 1px solid #0161ff;
+  background-color: #f4f8fc;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.navbar-brand span {
+  color: #0161ff;
+}
+
+/* hero */
+#hero {
+  margin-top: 130px;
+}
+
+#hero a i:hover {
+  color: #0161ff;
+}
+
+.btn-hero:hover {
+  background: #f4f8fc;
+  color: #0161ff;
+}
+
+.hero-text {
+  margin: auto;
+}
+
+.hero-text button {
+  border-radius: 20px;
+  margin-right: 34px;
+}
+
+.fa-brands {
+  font-size: 30px;
+  margin-right: 35px;
+  color: #0c0c0d;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+h1 span {
+  color: #0161ff;
+}
+
+.button {
+  border-radius: 20px;
+}
+
+/* tentang kami */
+#tentang-kami {
+  margin-top: 159px;
+}
+
+#tentang-kami h3 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.tentangkami-text p {
+  color: #808080;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.tentangkami-text p span {
+  color: #0161ff;
+}
+
+.btn-tentangkami:hover {
+  background: #e9f1fe;
+  color: #0161ff;
+  cursor: pointer;
+}
+
+/* fasilitas */
+#fasilitas {
+  margin-top: 159px;
+}
+
+#fasilitas {
+  background-color: #e9f1fe;
+}
+
+#fasilitas .card {
+  border: none;
+}
+#fasilitas .card-body {
+  background-color: #e9f1fe;
+}
+.card-body i {
+  color: #0c0c0d;
+  font-size: 50px;
+}
+
+#fasilitas .card button {
+  border-radius: 10px;
+}
+
+#fasilitas .card p {
+  color: #808080;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* gallery */
+#gallery {
+  margin-top: 159px;
+}
+
+#gallery .card {
+  border-radius: 20px;
+  background-color: #e9f1fe;
+}
+
+#gallery .card:hover {
+  background-color: #f4f8fc;
+  cursor: pointer;
+}
+
+#gallery .card .card-body p {
+  color: #808080;
+}
+
+#gallery .card .card-body p b {
+  color: #0c0c0d;
+}
+
+#gallery .card img {
+  transition: transform 1s ease-out;
+}
+
+#gallery .card img:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* kontak */
+#kontak {
+  margin-top: 159px;
+}
+
+#kontak {
+  background-color: #e9f1fe;
+}
+
+.kontak-info ul li span {
+  font-weight: 600;
+}
+
+#kontak ul,
+iframe {
+  border-radius: 20px;
+}
+
+/* footer */
+footer {
+  margin-top: 208px;
+}
+
+footer a i {
+  color: #f4f8fc;
+}
+
+/* Animation */
+.navbar {
+  animation: fadeDown 1000ms forwards;
+  opacity: 0;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(1);
+  }
+}
+
+.hero-text h1 {
+  animation: fadeToRight 800ms forwards cubic-bezier(0.22, 0.32, 0, 1.54);
+  opacity: 0;
+  animation-delay: 800ms;
+}
+
+@keyframes fadeToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero-text .btn-hero {
+  animation: fadeIn 1000ms forwards;
+  opacity: 0;
+  animation-delay: 1400ms;
+}
+
+.hero-text a i {
+  animation: fadeIn 1000ms forwards;
+  opacity: 0;
+  animation-delay: 1600ms;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-img {
+  animation: fadeToLeft 1200ms forwards;
+  opacity: 0;
+  animation-delay: 900ms;
+}
+
+@keyframes fadeToLeft {
+  from {
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
